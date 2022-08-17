@@ -8,6 +8,66 @@
     <title>Formulario de Registro</title>
 </head>
 <body>
-    
+    <h1>Formulario de Registro</h1>
+    <form action="/process" method="post">
+        <div>
+            <label>Nombres: *</label>
+            <input type="text" name="nombre">
+        </div>
+        <div>
+            <label>Apellidos: *</label>
+            <input type="text" name="apellidos">
+        </div>
+        <div>
+            <label>Correo electrónico: *</label>
+            <input type="text" name="correo">
+        </div>
+        <div>
+            <label>Contraseña:* </label>
+            <input type="password" name="clave">
+        </div>
+        <div>
+            <label>Confirmar contraseña:* </label>
+            <input type="password" name="conclave">
+        </div>
+        <div>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fdn">
+        </div>
+        <div>
+            <label>Género:</label>
+            <br>
+            <input type="radio" name="genero" value="masculino" id="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="genero" value="femenino" id="femenino">
+            <label for="normal">Femenino</label>
+            <input type="radio" name="genero" value="nobinario" id="nobinario">
+            <label for="nobinario">No binario</label>
+            <input type="radio" name="genero" value="noresponder" id="noresponder">
+            <label for="noresponder">Prefiero no responder</label>
+        </div>
+        <div>
+            <label>Escribe una breve descripción sobre mi mismo:</label>
+            <br>
+            <textarea name="descripcion" cols="40" rows="4"></textarea>
+        </div>
+        <div>
+            <label>Lenguaje favorito:</label>
+            <select name="lenguaje">
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>PHP</option>
+                <option>Ruby</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="accepta" id="accepta" checked>
+            <label for="accept">Sí, me gustaría recibir actualizaciones por correo</label>
+        </div>
+        <div>
+            <input type="submit" value="Crear una cuenta" >
+        </div>
+        <p>*Indica campos requeridos.</p>
+    </form>
 </body>
 </html>
